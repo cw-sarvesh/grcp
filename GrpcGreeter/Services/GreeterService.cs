@@ -18,4 +18,12 @@ public class GreeterService : Greeter.GreeterBase
             Message = "Hello " + request.Name
         });
     }
+
+    public override Task<AdditonReply> DoAdditon(AdditonRequest request, ServerCallContext context)
+    {
+        return Task.FromResult(new AdditonReply
+        {
+            Sum = request.First + request.Second
+        });
+    }
 }
