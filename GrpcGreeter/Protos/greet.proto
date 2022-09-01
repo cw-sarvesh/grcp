@@ -11,6 +11,7 @@ service Greeter {
 
   // Do AdditonRequest
   rpc DoAdditon (AdditonRequest) returns (AdditonReply);
+  rpc DoSomeThing (AdditonRequest) returns (AdditonReply);
 }
 
 

@@ -26,4 +26,11 @@ public class GreeterService : Greeter.GreeterBase
             Sum = request.First + request.Second
         });
     }
+    public override Task<AdditonReply> DoSomeThing(AdditonRequest request, ServerCallContext context)
+    {
+        return Task.FromResult(new AdditonReply
+        {
+            Sum = request.First + request.Second
+        });
+    }
 }

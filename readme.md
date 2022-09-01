@@ -20,3 +20,10 @@ dotnet add GrpcGreeterClient.csproj package Grpc.Tools.
 9. <https://docs.microsoft.com/en-us/aspnet/core/tutorials/grpc/grpc-start?view=aspnetcore-6.0&tabs=visual-studio-code#create-the-greeter-client>
 10. Start the Greeter service.
 Start the client.
+
+
+# Steps to add new rpc service and then adding function in controller.
+
+1. Add new rpc service
+2. Go to project controller of client or server and run dotnet build
+3. It will build C sharp base function from your proto files
